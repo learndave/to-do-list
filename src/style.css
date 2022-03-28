@@ -1,0 +1,133 @@
+:root {
+    --padding-tiny: 10px;
+    --padding-small: 20px;
+    --padding-regular: 30px;
+    --padding-medium: 45px;
+    --padding-large: 60px;
+
+    --color-main: #630606;
+    --color-two: #890F0D;
+    --color-three: #E83A14;
+    --color-four: #D9CE3F;
+    --color-light-grey: #f5f5f5;
+    --color-lighter-grey: #fdfdfd;
+    --color-grey: #bbbbbb;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: max-content;
+
+    margin: var(--padding-regular);
+    padding: var(--padding-tiny);
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px var(--color-grey);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-tiny) var(--padding-large);
+    height: 30px;
+
+    background-color: var(--color-three);
+    border-radius: 10px 10px 0 0;
+    color: white;
+}
+
+.body {
+    display: flex;
+    
+    background-color: var(--color-light-grey);
+    height: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+.sidenav {
+    flex: 0 1 30vw;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0 0 0 10px;
+    padding: var(--padding-medium) var(--padding-tiny) var(--padding-medium) var(--padding-medium) ;
+    gap: var(--padding-regular);
+}
+
+.sidenav-title {
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.categories-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.categories-container.projects {
+    padding-left: var(--padding-tiny);
+}
+
+.category {
+    padding: var(--padding-tiny);
+    border-radius: 5px;
+}
+
+.category:hover {
+    background-color: var(--color-lighter-grey);
+}
+
+.main {
+    flex: 1 0;
+    background-color: white;
+
+    border: solid 1px var(--color-light-grey);
+    border-radius: 0 0 10px 0;
+
+    padding: var(--padding-medium);
+}
+
+.main * {
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--padding-small);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+.task {
+    padding: var(--padding-tiny);
+    border-bottom: solid 1px var(--color-light-grey);
+}
+
+.task:hover {
+    background-color: var(--color-light-grey);
+}

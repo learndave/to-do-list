@@ -5,43 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do List</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-
+    <div id="content">
+        <div class="header">
+            <a href="#" class="home">
+                O
+            </a>
+            <a class="add-task">
+                O
+            </a>
         </div>
-        <div class="menu">
-
-        </div>
-    </div>
-    <div class="body">
-        <div class="sidenav">
-            <div class="by-date">
-                <div class="today">
-
+        <div class="body">
+            <div class="sidenav">
+                <div class="categories-container date-categories">
+                    <a href="#" class="category date-category today">
+                        Today
+                    </a>
+                    <a href="#" class="category date-category upcoming">
+                        Upcoming
+                    </a>
                 </div>
-                <div class="upcoming">
-    
-                </div>
-            </div>
-            <div class="by-project">
-
-            </div>
-        </div>
-        <div class="main">
-            <div class="card">
-                <div class="title">
-
-                </div>
-                <div class="content">
-
+                <div class="categories-container projects">
+                    <div class="sidenav-title">
+                        Projects
+                    </div>
+                    <a href="#" class="category project">Project Noah</a>
                 </div>
             </div>
+            <div class="main">
+                <div class="card">
+                    <div class="title">
+                        Project Noah
+                    </div>
+                    <div class="tasks">
+                        <a href="#" class="task">Task 1</a>
+                        <a href="#" class="task">Task 2</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="footer">
-        
     </div>
     <script src="main.js"></script>
 </body>
