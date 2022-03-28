@@ -1,8 +1,8 @@
 :root {
     --padding-tiny: 10px;
     --padding-small: 20px;
-    --padding-regular: 30px;
-    --padding-medium: 45px;
+    --padding-regular: 34px;
+    --padding-medium: 40px;
     --padding-large: 60px;
 
     --color-main: #630606;
@@ -16,6 +16,7 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     padding: 0;
     margin: 0;
 }
@@ -28,11 +29,12 @@ a {
 #content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: stretch;
     height: max-content;
 
     margin: var(--padding-regular);
     padding: var(--padding-tiny);
+    min-height: calc(100vh - 4 * var(--padding-tiny) - 4 * var(--padding-regular));
     border-radius: 15px;
 
     box-shadow: 0 0 20px var(--color-grey);
@@ -51,6 +53,7 @@ a {
 }
 
 .body {
+    flex: 1;
     display: flex;
     
     background-color: var(--color-light-grey);
