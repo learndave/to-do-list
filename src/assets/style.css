@@ -8,6 +8,7 @@
     --color-main: #630606;
     --color-two: #F52740;
     --color-three: #E83A14;
+    --color-three-highlight: rgba(232,58,20,0.7);
     --color-four: #D9CE3F;
     --color-light-grey: #f5f5f5;
     --color-lighter-grey: #fdfdfd;
@@ -141,7 +142,12 @@ body {
 }
 
 .category.selected {
-    background-color: var(--color-grey);
+    background-color: var(--color-three-highlight);
+    color: white;
+}
+
+.category.selected .category-icon {
+    filter: invert();
 }
 
 .category-icon {
