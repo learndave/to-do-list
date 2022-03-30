@@ -140,12 +140,16 @@ body {
     border-radius: 5px;
 }
 
+.category.selected {
+    background-color: var(--color-grey);
+}
+
 .category-icon {
     height: max-content;
     width: 20px;
 }
 
-.category:hover {
+.category:hover:not(.selected) {
     background-color: var(--color-lighter-grey);
 }
 
@@ -296,5 +300,4 @@ body {
     .home-icon {
         display: none;
     }
-    
 }
