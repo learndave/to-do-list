@@ -1,7 +1,8 @@
 import HomeIcon from "./home.svg";
 import AddTaskIcon from "./add-task.svg";
 import DateCategoryIcon from "./calendar.svg";
-import ProjectCategoryIcon from "./circle.svg";
+import CircleIcon from "./circle.svg";
+import TaskEditIcon from "./task-edit.svg";
 
 export class ComponentService {
     constructor() {
@@ -21,6 +22,8 @@ export class ComponentService {
         renderImageFiles(".home-icon", HomeIcon);
         renderImageFiles(".add-task-icon", AddTaskIcon);
         renderImageFiles(".date-category-icon", DateCategoryIcon);
-        renderImageFiles(".project-category-icon", ProjectCategoryIcon);
+        renderImageFiles(".project-category-icon", CircleIcon);
+        renderImageFiles(".task-icon",CircleIcon);
+        renderImageFiles(".task-edit-icon",TaskEditIcon);
     }
 }
