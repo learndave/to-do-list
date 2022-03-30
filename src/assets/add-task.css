@@ -53,5 +53,5 @@
 }
 
 .add-project-button:hover {
-    background-color: var(--color-two-highlight);
+    background-color: var(--color-three-highlight);
 }
