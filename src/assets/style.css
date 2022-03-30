@@ -296,8 +296,14 @@ body {
 }
 
 @media (max-width: 600px) {
-    .category-icon,
-    .home-icon {
+    .category-icon {
+        display: none;
+    }
+    .add-project {
+        justify-content: center;
+    }
+
+    .add-project-label {
         display: none;
     }
 }

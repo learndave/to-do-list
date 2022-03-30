@@ -1,8 +1,7 @@
 import HomeIcon from "./assets/home.svg";
-import AddTaskIcon from "./assets/add-task.svg";
+import AddIcon from "./assets/add.svg";
 import DateCategoryIcon from "./assets/calendar.svg";
 import CircleIcon from "./assets/circle.svg";
-import TaskEditIcon from "./assets/task-edit.svg";
 
 export class ComponentService {
     constructor() {
@@ -19,11 +18,10 @@ export class ComponentService {
         }
 
         renderImageFiles(".home-icon", HomeIcon);
-        renderImageFiles(".add-task-icon", AddTaskIcon);
         renderImageFiles(".date-category-icon", DateCategoryIcon);
         renderImageFiles(".project-category-icon", CircleIcon);
+        renderImageFiles(".add-project-icon",AddIcon);
         renderImageFiles(".task-icon",CircleIcon);
-        renderImageFiles(".task-edit-icon",TaskEditIcon);
     }
 
     initializeCategories() {
@@ -50,5 +48,23 @@ export class ComponentService {
         unselectAllCategories(this.categories);
         listenToClicks(this.categories);
         selectCategory(document.querySelector("#today.category"));
+    }
+
+    initializeAddProject() {
+
+        const showAddProjectForm = () => {
+            const addProject = document.querySelector(".add-project");
+            const icon = addProject.querySelector(".add-project-icon")
+            const label = addProject.querySelector(".add-project-label");
+            const input = addProject.querySelector(".add-project-input");
+            const button = addProject.querySelector(".add-project-button");
+            icon.style.display = "none";
+            label.style.display = "none";
+            input.style.display = "block";
+            button.style.display = "block";
+            addProject.classList.add("showing-form");
+        }
+
+        document.querySelector(".add-project").addEventListener("click", () => showAddProjectForm());
     }
 }
