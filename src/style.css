@@ -292,7 +292,9 @@ body {
 }
 
 @media (max-width: 600px) {
-    .category-icon {
+    .category-icon,
+    .home-icon {
         display: none;
     }
+    
 }
