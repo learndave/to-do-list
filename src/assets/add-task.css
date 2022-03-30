@@ -51,3 +51,7 @@
     background-color: var(--color-two);
     color: white;
 }
+
+.add-project-button:hover {
+    background-color: var(--color-two-highlight);
+}
