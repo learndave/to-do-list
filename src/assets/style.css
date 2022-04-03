@@ -243,7 +243,7 @@ body {
     align-items: center;
 }
 
-@media (max-width: 800px)  {
+@media (max-width: 700px)  {
     .body {
         flex-direction: column;
     }
