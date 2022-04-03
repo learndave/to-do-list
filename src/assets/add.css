@@ -1,0 +1,146 @@
+.add-project {
+    display: flex;
+    align-items: center;
+    gap: var(--padding-small);
+
+    justify-content: flex-start;
+
+    padding: var(--padding-tiny);
+    border-radius: 5px;
+}
+
+.add-project-icon {
+    height: max-content;
+    width: 20px;
+    filter: invert(50%);
+}
+
+.add-project-label {
+    color: var(--color-grey);
+}
+
+.add-project:hover:not(.showing-form)  {
+    background-color: var(--color-lighter-grey);
+}
+
+.add-project-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--padding-tiny);
+}
+
+.add-project-input,
+.add-project-button {
+    display: none;
+}
+
+.add-project-input {
+    width: 100%;
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.add-project-button {
+
+    width: min-content;
+    padding: 5px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-two);
+    color: white;
+}
+
+.add-project-button:hover {
+    background-color: var(--color-three-highlight);
+}
+
+/* ADD-TASK */
+
+.add-task {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: var(--padding-tiny);
+
+    padding: var(--padding-small) var(--padding-tiny);
+    border-radius: 5px;
+}
+
+.add-task-icon {
+    height: max-content;
+    width: 20px;
+    filter: invert(50%);
+}
+
+.add-task-label {
+    color: var(--color-grey);
+    align-self: flex-start;
+}
+
+.add-task-date-label {
+    color: var(--color-grey);
+}
+
+.add-task:not(.showing-form):hover  {
+    background-color: var(--color-light-grey);
+}
+
+.add-task-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--padding-tiny);
+}
+
+.add-task-input,
+.add-task-button,
+.add-task-date,
+.add-task-date-label {
+    display: none;
+}
+
+.add-task-input {
+    width: calc( 100% - 2*var(--padding-tiny));
+    border: 2px solid var(--color-three-highlight);
+    align-self: center;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.add-task-button {
+
+    width: min-content;
+    padding: 5px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-two);
+    color: white;
+}
+
+.add-task-button:hover {
+    background-color: var(--color-three-highlight);
+}
+
+.add-task-date {
+    font-size: 16px;
+    color: var(--color-dark-grey);
+    border-radius: 5px;
+    border: none;
+}
+
+.add-task-date-container {
+    display: flex;
+    margin: var(--padding-tiny);
+}
+
+/* .add-task * {
+    outline: 1px dashed blue;
+} */

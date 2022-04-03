@@ -22,6 +22,7 @@ export class ComponentService {
         renderImageFiles(".project-category-icon", CircleIcon);
         renderImageFiles(".add-project-icon",AddIcon);
         renderImageFiles(".task-icon",CircleIcon);
+        renderImageFiles(".add-task-icon",AddIcon);
     }
 
     initializeCategories() {
@@ -48,6 +49,28 @@ export class ComponentService {
         unselectAllCategories(this.categories);
         listenToClicks(this.categories);
         selectCategory(document.querySelector("#today.category"));
+    }
+
+    initializeAddTask() {
+
+        const showAddTaskForm = () => {
+            const addTask = document.querySelector(".add-task");
+            const icon = addTask.querySelector(".add-task-icon")
+            const label = addTask.querySelector(".add-task-label");
+            const input = addTask.querySelector(".add-task-input");
+            const date = addTask.querySelector(".add-task-date");
+            const button = addTask.querySelector(".add-task-button");
+            const dateLabel = addTask.querySelector(".add-task-date-label");
+            icon.style.display = "none";
+            label.style.display = "none";
+            input.style.display = "block";
+            date.style.display = "inline";
+            button.style.display = "block";
+            dateLabel.style.display = "inline";
+            addTask.classList.add("showing-form");
+        }
+
+        document.querySelector(".add-task").addEventListener("click", () => showAddTaskForm());
     }
 
     initializeAddProject() {

@@ -90,8 +90,7 @@ body {
     transform: scale(110%);
 }
 
-.home:hover,
-.add-task:hover {
+.home:hover {
     transform: scale(120%);
 }
 
